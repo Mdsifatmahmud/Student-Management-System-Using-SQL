@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Management</h1>
+        </header>
+        
+        <section class="form-section">
+            <h2>Add New Student</h2>
+            <form id="addStudentForm">
+                <label for="roll">Roll Number:</label>
+                <input type="number" id="roll" name="roll" required>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="contact">Parent's Contact Number:</label>
+                <input type="text" id="contact" name="contact" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Student List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll</th>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>DS Score</th>
+                        <th>ALGO Score</th>
+                        <th>OOP Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable">
+                    <!-- Dynamically populate rows here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script>
+        // Frontend JavaScript for adding dynamic data or integration with a backend.
+        // You can use AJAX or Fetch API to interact with the database.
+    </script>
+</body>
+
+</html>
